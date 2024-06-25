@@ -1,0 +1,219 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 9vmin;
+  pointer-events: none;
+  margin-left: 11px;
+  margin-top: 10px;
+}
+
+.App-logo3 {
+  height: 9vmin;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.app-menu {
+  font-size: medium;
+  color: #000;
+}
+
+.App-menu-bar {
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s linear;
+  }
+}
+
+.App-header {
+  background-color: rgb(8 126 164/var);
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: relative;
+  top: -283px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+    max-width: 1280px !important;
+}
+
+.app-navbar {
+  border-radius: 25px;
+  height: 82px;
+}
+
+body {
+  overflow: hidden;
+}
+
+
+
+.image-fader {
+  width: 300px;
+  height: 300px;
+}
+
+.image-fader img {
+  width: 1281px;
+  height: 586px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation-name: imagefade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+
+@keyframes imagefade {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.image-fader img:nth-of-type(1) {
+  animation-delay: 8s;
+}
+.image-fader img:nth-of-type(2) {
+  animation-delay: 6s;
+}
+.image-fader img:nth-of-type(3) {
+  animation-delay: 4s;
+}
+.image-fader img:nth-of-type(4) {
+  animation-delay: 2s;
+}
+
+.left-section {
+  color: #1C254F;
+  font-family: "Playfair Display", Sans-serif;
+  font-size: 40px;
+  background-color: whitesmoke;
+  margin-left: 18px;
+  box-shadow: 4px 2px 5px #aaaaaa;
+}
+
+.right-section {
+  font-family: "Nunito", sans-serif;
+  background-color: whitesmoke;
+  margin-left: 165px;
+  box-shadow: 4px 2px 5px #aaaaaa;
+}
+
+.App-logo8 {
+  width: 523px;
+  height: 365px;
+}
+
+.span-paragraph {
+  display: flex;
+  text-align: left;
+  font-size: 15px;
+  margin-left: 28px;
+}
+
+.span-uppar-para {
+  display: flex;
+  text-align: left;
+  font-size: 47px;
+  margin-left: 28px;
+}
+
+.blue-span {
+  margin-left: 8px;
+  color: #4152A3 !important;
+}
+
+.App-body {
+  display: flex;
+  position: relative;
+  height: 365px;
+  bottom: 240px;
+}
+
+.avtar {
+  position: relative;
+  top: 54px;
+  width: 132px;
+  right: 194px;
+}
+
+
+
+
+.flamelab-cw-msg-box {
+  background: white;
+  height: 95px;
+  width: 322px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation-name: flamelab-convo-widget_msg-appear;
+    animation-duration: 2s;
+    font-size: 15px;
+    line-height: 23px;
+    position: relative;
+    top: 104px;
+    left: 67px;
+}
+
+#flamelab-convo-widget img {
+  animation-name: flamelab-convo-widget_rotate;
+    animation-duration: 1.5s;
+    transform: rotate(20deg);
+}
+
+#flamelab-convo-widget {
+  position: fixed;
+  bottom: 150px;
+  left: -40px;
+  animation-name: flamelab-convo-widget_enter;
+  animation-duration: 1.5s;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1000;
+  color: black;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--bs-nav-link-color) !important;
+  margin: 0 0 0 20px;
+}
